@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+
+<html class="light" lang="vi"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container": "#eaedff", "on-primary-fixed": "#181445", "surface-bright": "#faf8ff", "on-surface-variant": "#47464f", "on-tertiary": "#ffffff", "surface": "#faf8ff", "tertiary-fixed": "#d8e2ff", "inverse-on-surface": "#eef0ff", "on-error": "#ffffff", "on-surface": "#131b2e", "surface-container-highest": "#dae2fd", "primary": "#070235", "tertiary-container": "#00204d", "surface-container-high": "#e2e7ff", "secondary-fixed": "#71f8e4", "on-primary-fixed-variant": "#444173", "surface-container-lowest": "#ffffff", "on-primary-container": "#8683ba", "secondary-container": "#6df5e1", "surface-dim": "#d2d9f4", "tertiary-fixed-dim": "#adc6ff", "on-tertiary-fixed-variant": "#004395", "background": "#faf8ff", "surface-variant": "#dae2fd", "tertiary": "#000a22", "inverse-surface": "#283044", "on-secondary-fixed": "#00201c", "on-tertiary-fixed": "#001a42", "outline-variant": "#c8c5d0", "on-error-container": "#93000a", "outline": "#787680", "secondary-fixed-dim": "#4fdbc8", "on-primary": "#ffffff", "secondary": "#006b5f", "on-secondary-container": "#006f64", "on-secondary-fixed-variant": "#005048", "error-container": "#ffdad6", "inverse-primary": "#c4c1fb", "surface-tint": "#5b598c", "primary-fixed-dim": "#c4c1fb", "surface-container-low": "#f2f3ff", "primary-fixed": "#e3dfff", "on-background": "#131b2e", "on-secondary": "#ffffff", "error": "#ba1a1a", "primary-container": "#1e1b4b", "on-tertiary-container": "#4086fa" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xl": "2rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "space-md": "1rem", "gutter": "1.5rem", "gutter-mobile": "1rem", "margin-mobile": "1rem", "margin": "2rem", "space-sm": "0.5rem" }, "fontFamily": { "body-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-md": ["Newsreader"], "headline-lg": ["Newsreader"], "label-sm": ["Plus Jakarta Sans"], "display-lg": ["Newsreader"], "headline-sm": ["Newsreader"], "label-md": ["Plus Jakarta Sans"], "title-sm": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "display-lg-mobile": ["Newsreader"], "headline-lg-mobile": ["Newsreader"] }, "fontSize": { "body-md": ["0.9375rem", { "lineHeight": "1.5rem", "fontWeight": "400" }], "body-lg": ["1.125rem", { "lineHeight": "1.75rem", "fontWeight": "400" }], "headline-md": ["1.5rem", { "lineHeight": "2rem", "fontWeight": "500" }], "headline-lg": ["2rem", { "lineHeight": "2.5rem", "letterSpacing": "-0.015em", "fontWeight": "500" }], "label-sm": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.02em", "fontWeight": "600" }], "display-lg": ["3.5rem", { "lineHeight": "4rem", "letterSpacing": "-0.02em", "fontWeight": "400" }], "headline-sm": ["1.25rem", { "lineHeight": "1.75rem", "fontWeight": "600" }], "label-md": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.01em", "fontWeight": "600" }], "title-sm": ["1rem", { "lineHeight": "1.5rem", "fontWeight": "600" }], "body-sm": ["0.8125rem", { "lineHeight": "1.25rem", "fontWeight": "400" }], "title-md": ["1.125rem", { "lineHeight": "1.625rem", "fontWeight": "600" }], "display-lg-mobile": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.01em", "fontWeight": "400" }], "headline-lg-mobile": ["1.625rem", { "lineHeight": "2.125rem", "letterSpacing": "-0.01em", "fontWeight": "500" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="hidden lg:flex fixed left-0 top-0 h-full w-72 bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex-col justify-between py-6 px-4"><div class="flex flex-col gap-6"><div class="flex items-center justify-between px-3"><div class="flex items-center gap-3"><img alt="StudyPlan Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XtWIWVxuy8MKegmofDKiZpEOjnIDdIJxQSQBlgpBXrfvNPMb3TtHdZLJxgjeQu2lXb6A22l6t4kavAjGLceViKkzK4U21OXaAfg9K61JYtoQm6zX5--UzwzEM4uH2Lok86uwQA2OMHIMxxnJ8dVPG77_iXwCUIOl3SfMMDIO8PEC5ooP9-wuPB1QFXOyKN4V2zuzVBbC9_aIYtckrE0n3guotSClFi30qJKufphyVM8Fi6LrzIalEiXsHz"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight">StudyPlan</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div><div class="px-3"><div class="flex items-center justify-between p-2 rounded-xl bg-surface-container text-on-surface"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-secondary">school</span><span class="font-label-md text-label-md">Sinh viên</span></div><span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant">K65</span></div></div><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary font-title-sm text-title-sm rounded-xl"><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="bang-dieu-khien" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span>Bảng điều khiển</a><a aria-current="page" class="flex items-center gap-3 px-3.5 py-2.5 transition-colors bg-primary-container text-on-primary font-title-sm text-title-sm rounded-xl" data-path="ke-hoach-va-nhiem-vu" href="#"><span class="material-symbols-outlined text-[20px]">task_alt</span>Kế hoạch &amp; Nhiệm vụ</a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="mon-hoc" href="#"><span class="material-symbols-outlined text-[20px]">menu_book</span>Môn học</a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="lich-hoc" href="#"><span class="material-symbols-outlined text-[20px]">calendar_today</span>Lịch học</a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="bam-gio-pomodoro" href="#"><span class="material-symbols-outlined text-[20px]">timer</span>Bấm giờ Pomodoro</a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="diem-so" href="#"><span class="material-symbols-outlined text-[20px]">grade</span>Điểm số</a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="thong-ke" href="#"><span class="material-symbols-outlined text-[20px]">insights</span>Thống kê</a><a class="flex items-center justify-between px-3.5 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="phu-huynh-xem" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">visibility</span>Phụ huynh xem</div><span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant flex items-center gap-1"><span class="material-symbols-outlined text-[12px]">visibility</span>Chỉ xem</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="cai-dat-rieng-tu" href="#"><span class="material-symbols-outlined text-[20px]">shield</span>Cài đặt riêng tư</a></nav></div><div class="flex flex-col gap-4 px-2 pt-4 border-t-0"><div class="flex items-center justify-between px-2"><button aria-label="Đổi giao diện sáng tối" class="flex items-center justify-center w-9 h-9 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">dark_mode</span></button><button aria-label="Thông báo" class="flex items-center justify-center w-9 h-9 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors relative" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-error"></span></button></div><div class="flex items-center gap-3 p-2.5 rounded-xl bg-surface-container"><div class="w-9 h-9 rounded-full bg-primary text-on-primary flex items-center justify-center font-title-sm text-title-sm font-semibold">NA</div><div class="flex flex-col min-w-0 flex-1"><span class="font-label-md text-label-md text-on-surface truncate">Nguyễn Văn An</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">K65 CNTT</span></div></div></div></aside><div class="lg:pl-72 flex flex-col min-h-screen"><header class="fixed top-0 right-0 left-0 lg:left-72 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-gutter-mobile lg:px-gutter flex items-center justify-between"><div class="flex items-center gap-3"><div class="lg:hidden flex items-center gap-2"><img alt="StudyPlan Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XtWIWVxuy8MKegmofDKiZpEOjnIDdIJxQSQBlgpBXrfvNPMb3TtHdZLJxgjeQu2lXb6A22l6t4kavAjGLceViKkzK4U21OXaAfg9K61JYtoQm6zX5--UzwzEM4uH2Lok86uwQA2OMHIMxxnJ8dVPG77_iXwCUIOl3SfMMDIO8PEC5ooP9-wuPB1QFXOyKN4V2zuzVBbC9_aIYtckrE0n3guotSClFi30qJKufphyVM8Fi6LrzIalEiXsHz"/><span class="font-headline-sm text-headline-sm text-primary">StudyPlan</span></div><nav class="hidden sm:flex items-center gap-6" data-active-classes="text-primary font-title-sm text-title-sm font-bold"><a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md text-body-md" data-path="bang-dieu-khien" href="#">Tổng quan</a><a aria-current="page" class="transition-colors text-primary font-title-sm text-title-sm font-bold" data-path="ke-hoach-va-nhiem-vu" href="#">Nhiệm vụ</a><a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md text-body-md" data-path="lich-hoc" href="#">Lịch biểu</a><a class="text-on-surface-variant hover:text-on-surface transition-colors font-body-md text-body-md" data-path="thong-ke" href="#">Báo cáo</a></nav></div><div class="flex items-center gap-3"><button aria-label="Tìm kiếm" class="flex items-center justify-center w-9 h-9 rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">search</span></button><button aria-label="Thông báo" class="flex items-center justify-center w-9 h-9 rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors relative" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-error"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 pb-20 lg:pb-8 w-full bg-surface min-h-[calc(100vh-4rem)] px-gutter-mobile lg:px-gutter"><div class="flex flex-col w-full gap-6 pb-12">
+<!-- Top Navigation & Action Banner -->
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-4 bg-surface-container-low p-6 rounded-2xl shadow-sm">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-semibold">Học kỳ 2 • 2024-2025</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">auto_stories</span>
+          13 Nhiệm vụ tuần này
+        </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">Kế hoạch &amp; Nhiệm vụ</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tổ chức mục tiêu học tập, theo dõi tiến độ đồ án và bài tập lớn theo từng môn.</p>
+</div>
+<!-- Search & Quick Action -->
+<div class="flex flex-wrap sm:flex-nowrap items-center gap-3">
+<div class="relative w-full sm:w-72">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span>
+<input class="w-full pl-10 pr-4 py-2.5 rounded-xl bg-surface-container-lowest text-on-surface font-body-sm text-body-sm placeholder:text-on-surface-variant/60 shadow-sm focus:outline-none transition-all" id="task-search-input" placeholder="Tìm tên nhiệm vụ, tài liệu..." type="text"/>
+</div>
+<!-- View Switcher -->
+<div class="inline-flex p-1 rounded-xl bg-surface-container shadow-inner">
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-lowest text-primary font-label-md text-label-md shadow-sm transition-all" id="view-kanban-btn">
+<span class="material-symbols-outlined text-[18px]">view_kanban</span>
+<span>Kanban</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all" id="view-list-btn">
+<span class="material-symbols-outlined text-[18px]">format_list_bulleted</span>
+<span>Danh sách</span>
+</button>
+</div>
+<!-- Add Button -->
+<button class="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-primary-container text-on-primary hover:opacity-95 font-title-sm text-title-sm shadow-md transition-transform active:scale-95 whitespace-nowrap" id="open-modal-btn">
+<span class="material-symbols-outlined text-[20px]">add</span>
+<span>Thêm nhiệm vụ</span>
+</button>
+</div>
+</div>
+<!-- Filters Row -->
+<div class="flex flex-wrap items-center justify-between gap-4 px-1">
+<!-- Subject Filters -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1 max-w-full">
+<span class="font-label-sm text-label-sm text-on-surface-variant whitespace-nowrap mr-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">filter_alt</span> Môn học:
+      </span>
+<button class="filter-subject-btn active px-3.5 py-1.5 rounded-full font-label-sm text-label-sm bg-primary text-on-primary shadow-sm transition-all" data-subject="all">Tất cả (13)</button>
+<button class="filter-subject-btn px-3.5 py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all" data-subject="giai-tich-2">Giải tích 2</button>
+<button class="filter-subject-btn px-3.5 py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all" data-subject="dsa">DSA (Cấu trúc dữ liệu)</button>
+<button class="filter-subject-btn px-3.5 py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all" data-subject="ktmt">Kiến trúc MT</button>
+<button class="filter-subject-btn px-3.5 py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-all" data-subject="anh-van">Tiếng Anh CN</button>
+</div>
+<!-- Priority Selector & Sort -->
+<div class="flex items-center gap-3">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">flag</span>
+<select class="bg-surface-container px-3 py-1.5 rounded-lg text-on-surface font-label-sm text-label-sm focus:outline-none cursor-pointer" id="priority-filter-select">
+<option value="all">Mọi ưu tiên</option>
+<option value="urgent">Khẩn cấp (P1)</option>
+<option value="high">Cao (P2)</option>
+<option value="medium">Trung bình (P3)</option>
+<option value="low">Thấp (P4)</option>
+</select>
+</div>
+<button class="hidden text-secondary font-label-sm text-label-sm hover:underline" id="quick-clear-filter">Xóa lọc</button>
+</div>
+</div>
+<!-- Interactive Kanban Board Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-start" id="kanban-view">
+<!-- COLUMN 1: Chưa bắt đầu -->
+<div class="flex flex-col rounded-2xl bg-surface-container-low p-4 shadow-sm min-h-[640px] kanban-column" data-status="todo" id="col-todo">
+<!-- Column Header -->
+<div class="flex items-center justify-between pb-4 mb-2">
+<div class="flex items-center gap-2.5">
+<span class="w-3 h-3 rounded-full bg-slate-400"></span>
+<h2 class="font-title-sm text-title-sm text-on-surface tracking-tight">Chưa bắt đầu</h2>
+<span class="column-count px-2.5 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-semibold">3</span>
+</div>
+<button class="p-1 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" onclick="openNewTaskModal('todo')" title="Thêm vào cột này">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+<!-- Dropzone Indicator -->
+<div class="task-drop-area flex flex-col gap-3.5 flex-1 min-h-[480px] p-1.5 rounded-xl transition-colors">
+<!-- Task Card 1 -->
+<div class="task-card bg-surface-container-lowest p-4 rounded-2xl shadow-sm hover:shadow-md cursor-grab active:cursor-grabbing transition-all select-none group" data-deadline="overdue" data-id="task-1" data-priority="high" data-subject="giai-tich-2" draggable="true">
+<div class="flex items-start justify-between gap-2 mb-2.5">
+<span class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-indigo-500"></span> Giải tích 2
+            </span>
+<span class="px-2 py-0.5 rounded-md bg-error-container text-on-error-container font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">warning</span> Quá hạn 1 ngày
+            </span>
+</div>
+<h3 class="task-title font-title-sm text-title-sm text-on-surface font-semibold group-hover:text-primary transition-colors mb-1.5">
+            Bài tập tuần 5: Tích phân bội ba &amp; Toạ độ cầu
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-3">
+            Giải từ bài 12 đến bài 28 trong sách giáo trình. Chú ý các bài toán ứng dụng tính thể tích vật thể đối xứng.
+          </p>
+<div class="flex items-center justify-between pt-2 border-t-0 text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-3">
+<span class="flex items-center gap-1 text-error font-semibold">
+<span class="material-symbols-outlined text-[15px]">event</span> 23:59 Hôm qua
+              </span>
+<span class="flex items-center gap-1" title="Ước tính 3 Pomodoro (75 phút)">
+<span class="material-symbols-outlined text-[15px] text-secondary">timer</span> 3 Pomo
+              </span>
+</div>
+<div class="flex items-center gap-1">
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-medium">Cao</span>
+</div>
+</div>
+</div>
+<!-- Task Card 2 -->
+<div class="task-card bg-surface-container-lowest p-4 rounded-2xl shadow-sm hover:shadow-md cursor-grab active:cursor-grabbing transition-all select-none group" data-deadline="normal" data-id="task-2" data-priority="medium" data-subject="ktmt" draggable="true">
+<div class="flex items-start justify-between gap-2 mb-2.5">
+<span class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span> Kiến trúc MT
+            </span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+              Còn 4 ngày
+            </span>
+</div>
+<h3 class="task-title font-title-sm text-title-sm text-on-surface font-semibold group-hover:text-primary transition-colors mb-1.5">
+            Thiết kế mạch cộng ALU 4-bit trên Logisim
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-3">
+            Xây dựng sơ đồ khối và kiểm tra các cờ trạng thái Carry, Overflow và Zero flag theo đề bài lab 2.
+          </p>
+<div class="flex items-center justify-between pt-2 text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-3">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">event</span> T7, 18 Th03
+              </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">timer</span> 4 Pomo
+              </span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-medium">TB</span>
+</div>
+</div>
+<!-- Task Card 3 -->
+<div class="task-card bg-surface-container-lowest p-4 rounded-2xl shadow-sm hover:shadow-md cursor-grab active:cursor-grabbing transition-all select-none group" data-deadline="normal" data-id="task-3" data-priority="low" data-subject="anh-van" draggable="true">
+<div class="flex items-start justify-between gap-2 mb-2.5">
+<span class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-cyan-600"></span> Tiếng Anh CN
+            </span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+              Tuần sau
+            </span>
+</div>
+<h3 class="task-title font-title-sm text-title-sm text-on-surface font-semibold group-hover:text-primary transition-colors mb-1.5">
+            Đọc Unit 4: Cloud Infrastructure Vocabulary
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-3">
+            Ghi chú 25 từ vựng kỹ thuật về Microservices, Containerization và hoàn thiện bài nghe trắc nghiệm.
+          </p>
+<div class="flex items-center justify-between pt-2 text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-3">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">event</span> 24 Th03
+              </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">timer</span> 2 Pomo
+              </span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-medium">Thấp</span>
+</div>
+</div>
+</div>
+</div>
+<!-- COLUMN 2: Đang làm -->
+<div class="flex flex-col rounded-2xl bg-surface-container-low p-4 shadow-sm min-h-[640px] kanban-column" data-status="doing" id="col-doing">
+<!-- Column Header -->
+<div class="flex items-center justify-between pb-4 mb-2">
+<div class="flex items-center gap-2.5">
+<span class="w-3 h-3 rounded-full bg-blue-500 ring-4 ring-blue-500/20"></span>
+<h2 class="font-title-sm text-title-sm text-on-surface tracking-tight">Đang làm</h2>
+<span class="column-count px-2.5 py-0.5 rounded-full bg-blue-100 text-blue-800 font-label-sm text-label-sm font-semibold">4</span>
+</div>
+<button class="p-1 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" onclick="openNewTaskModal('doing')" title="Thêm vào cột này">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+<!-- Dropzone Indicator -->
+<div class="task-drop-area flex flex-col gap-3.5 flex-1 min-h-[480px] p-1.5 rounded-xl transition-colors">
+<!-- Task Card 4 -->
+<div class="task-card bg-surface-container-lowest p-4 rounded-2xl shadow-sm hover:shadow-md cursor-grab active:cursor-grabbing transition-all select-none group" data-deadline="soon" data-id="task-4" data-priority="urgent" data-subject="dsa" draggable="true">
+<div class="flex items-start justify-between gap-2 mb-2.5">
+<span class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span> DSA
+            </span>
+<span class="px-2 py-0.5 rounded-md bg-amber-100 text-amber-900 font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">schedule</span> Sắp hết hạn (6h)
+            </span>
+</div>
+<h3 class="task-title font-title-sm text-title-sm text-on-surface font-semibold group-hover:text-primary transition-colors mb-1.5">
+            Cài đặt Cây AVL &amp; Cân bằng xoay kép
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-2">
+            Hoàn thiện hàm insert và xoay trái-phải (LR, RL). Đã vượt qua 14/20 test cases mẫu trên HackerEarth.
+          </p>
+<!-- Progress Mini Bar -->
+<div class="w-full bg-surface-container rounded-full h-1.5 mb-3 overflow-hidden">
+<div class="bg-secondary h-1.5 rounded-full" style="width: 70%"></div>
+</div>
+<div class="flex items-center justify-between pt-1 text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-3">
+<span class="flex items-center gap-1 text-amber-700 font-semibold">
+<span class="material-symbols-outlined text-[15px]">timer</span> 23:00 Tối nay
+              </span>
+<span class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[15px]">play_circle</span> Đang học
+              </span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold">Khẩn cấp</span>
+</div>
+</div>
+<!-- Task Card 5 -->
+<div class="task-card bg-surface-container-lowest p-4 rounded-2xl shadow-sm hover:shadow-md cursor-grab active:cursor-grabbing transition-all select-none group" data-deadline="normal" data-id="task-5" data-priority="high" data-subject="giai-tich-2" draggable="true">
+<div class="flex items-start justify-between gap-2 mb-2.5">
+<span class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-indigo-500"></span> Giải tích 2
+            </span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+              Còn 2 ngày
+            </span>
+</div>
+<h3 class="task-title font-title-sm text-title-sm text-on-surface font-semibold group-hover:text-primary transition-colors mb-1.5">
+            Ôn tập chương 3: Định lý Gauss-Ostrogradsky
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-3">
+            Họp nhóm với Hoàng và Tuấn tại thư viện Tạ Quang Bửu để giải các dạng đề thi giữa kỳ năm 2023.
+          </p>
+<div class="flex items-center justify-between pt-2 text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-3">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">event</span> 16 Th03
+              </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">timer</span> 2/4 Pomo
+              </span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-medium">Cao</span>
+</div>
+</div>
+<!-- Task Card 6 -->
+<div class="task-card bg-surface-container-lowest p-4 rounded-2xl shadow-sm hover:shadow-md cursor-grab active:cursor-grabbing transition-all select-none group" data-deadline="normal" data-id="task-6" data-priority="medium" data-subject="ktmt" draggable="true">
+<div class="flex items-start justify-between gap-2 mb-2.5">
+<span class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span> Kiến trúc MT
+            </span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+              Còn 3 ngày
+            </span>
+</div>
+<h3 class="task-title font-title-sm text-title-sm text-on-surface font-semibold group-hover:text-primary transition-colors mb-1.5">
+            Mô phỏng Pipeline 5 tầng MIPS Assembly
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-3">
+            Xử lý hiện tượng Data Hazard và Branch Hazard bằng phương pháp chèn NOP và Data Forwarding.
+          </p>
+<div class="flex items-center justify-between pt-2 text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-3">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">event</span> 17 Th03
+              </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">timer</span> 5 Pomo
+              </span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-medium">TB</span>
+</div>
+</div>
+<!-- Task Card 7 -->
+<div class="task-card bg-surface-container-lowest p-4 rounded-2xl shadow-sm hover:shadow-md cursor-grab active:cursor-grabbing transition-all select-none group" data-deadline="normal" data-id="task-7" data-priority="low" data-subject="anh-van" draggable="true">
+<div class="flex items-start justify-between gap-2 mb-2.5">
+<span class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-cyan-600"></span> Tiếng Anh CN
+            </span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+              Thư thả
+            </span>
+</div>
+<h3 class="task-title font-title-sm text-title-sm text-on-surface font-semibold group-hover:text-primary transition-colors mb-1.5">
+            Thuyết trình nhóm: Agile vs Waterfall
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-3">
+            Chuẩn bị 8 slide tóm tắt ưu nhược điểm của mô hình Scrum trong dự án phần mềm vừa và nhỏ.
+          </p>
+<div class="flex items-center justify-between pt-2 text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-3">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">event</span> 19 Th03
+              </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">timer</span> 1/2 Pomo
+              </span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-medium">Thấp</span>
+</div>
+</div>
+</div>
+</div>
+<!-- COLUMN 3: Hoàn thành -->
+<div class="flex flex-col rounded-2xl bg-surface-container-low p-4 shadow-sm min-h-[640px] kanban-column" data-status="done" id="col-done">
+<!-- Column Header -->
+<div class="flex items-center justify-between pb-4 mb-2">
+<div class="flex items-center gap-2.5">
+<span class="w-3 h-3 rounded-full bg-emerald-500"></span>
+<h2 class="font-title-sm text-title-sm text-on-surface tracking-tight">Hoàn thành</h2>
+<span class="column-count px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-label-sm text-label-sm font-semibold">6</span>
+</div>
+<button class="p-1 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" onclick="openNewTaskModal('done')" title="Thêm vào cột này">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+<!-- Dropzone Indicator -->
+<div class="task-drop-area flex flex-col gap-3.5 flex-1 min-h-[480px] p-1.5 rounded-xl transition-colors">
+<!-- Task Card 8 -->
+<div class="task-card bg-surface-container-lowest p-4 rounded-2xl shadow-sm hover:shadow-md cursor-grab active:cursor-grabbing transition-all select-none group opacity-90" data-deadline="done" data-id="task-8" data-priority="high" data-subject="dsa" draggable="true">
+<div class="flex items-start justify-between gap-2 mb-2.5">
+<span class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span> DSA
+            </span>
+<span class="px-2 py-0.5 rounded-md bg-emerald-100 text-emerald-900 font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">check_circle</span> Đã nộp
+            </span>
+</div>
+<h3 class="task-title font-title-sm text-title-sm text-on-surface font-semibold line-through text-on-surface-variant group-hover:text-primary transition-colors mb-1.5">
+            Thuật toán tìm đường ngắn nhất Dijkstra
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-3">
+            Tối ưu độ phức tạp sử dụng Min-Heap (Priority Queue). Điểm hệ thống chấm: 100/100.
+          </p>
+<div class="flex items-center justify-between pt-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1 text-emerald-700">
+<span class="material-symbols-outlined text-[15px]">task_alt</span> Xong hôm qua
+            </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">timer</span> 4 Pomo
+            </span>
+</div>
+</div>
+<!-- Task Card 9 -->
+<div class="task-card bg-surface-container-lowest p-4 rounded-2xl shadow-sm hover:shadow-md cursor-grab active:cursor-grabbing transition-all select-none group opacity-90" data-deadline="done" data-id="task-9" data-priority="medium" data-subject="giai-tich-2" draggable="true">
+<div class="flex items-start justify-between gap-2 mb-2.5">
+<span class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-indigo-500"></span> Giải tích 2
+            </span>
+<span class="px-2 py-0.5 rounded-md bg-emerald-100 text-emerald-900 font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">check_circle</span> Đã làm
+            </span>
+</div>
+<h3 class="task-title font-title-sm text-title-sm text-on-surface font-semibold line-through text-on-surface-variant group-hover:text-primary transition-colors mb-1.5">
+            Bài kiểm tra trắc nghiệm vi phân cấp hai
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-3">
+            Hoàn tất quiz trên MS Teams đạt 9.5 điểm. Lưu lời giải chi tiết vào Google Drive cá nhân.
+          </p>
+<div class="flex items-center justify-between pt-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1 text-emerald-700">
+<span class="material-symbols-outlined text-[15px]">task_alt</span> 12 Th03
+            </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">timer</span> 2 Pomo
+            </span>
+</div>
+</div>
+<!-- Task Card 10 -->
+<div class="task-card bg-surface-container-lowest p-4 rounded-2xl shadow-sm hover:shadow-md cursor-grab active:cursor-grabbing transition-all select-none group opacity-90" data-deadline="done" data-id="task-10" data-priority="low" data-subject="ktmt" draggable="true">
+<div class="flex items-start justify-between gap-2 mb-2.5">
+<span class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span> Kiến trúc MT
+            </span>
+<span class="px-2 py-0.5 rounded-md bg-emerald-100 text-emerald-900 font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">check_circle</span> Đã xong
+            </span>
+</div>
+<h3 class="task-title font-title-sm text-title-sm text-on-surface font-semibold line-through text-on-surface-variant group-hover:text-primary transition-colors mb-1.5">
+            Cài đặt trình mô phỏng MARS MIPS Simulator
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-3">
+            Cấu hình biến môi trường Java SDK 17 và biên dịch thử chương trình Hello World.
+          </p>
+<div class="flex items-center justify-between pt-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1 text-emerald-700">
+<span class="material-symbols-outlined text-[15px]">task_alt</span> 10 Th03
+            </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">timer</span> 1 Pomo
+            </span>
+</div>
+</div>
+<!-- Task Card 11 -->
+<div class="task-card bg-surface-container-lowest p-4 rounded-2xl shadow-sm hover:shadow-md cursor-grab active:cursor-grabbing transition-all select-none group opacity-90" data-deadline="done" data-id="task-11" data-priority="medium" data-subject="anh-van" draggable="true">
+<div class="flex items-start justify-between gap-2 mb-2.5">
+<span class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-cyan-600"></span> Tiếng Anh CN
+            </span>
+<span class="px-2 py-0.5 rounded-md bg-emerald-100 text-emerald-900 font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">check_circle</span> Đã nộp
+            </span>
+</div>
+<h3 class="task-title font-title-sm text-title-sm text-on-surface font-semibold line-through text-on-surface-variant group-hover:text-primary transition-colors mb-1.5">
+            Viết đoạn văn tóm tắt System Requirements Spec
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-3">
+            Nộp bài viết 250 từ về phân loại chức năng (functional) và phi chức năng (non-functional).
+          </p>
+<div class="flex items-center justify-between pt-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1 text-emerald-700">
+<span class="material-symbols-outlined text-[15px]">task_alt</span> 09 Th03
+            </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">timer</span> 2 Pomo
+            </span>
+</div>
+</div>
+<!-- Task Card 12 -->
+<div class="task-card bg-surface-container-lowest p-4 rounded-2xl shadow-sm hover:shadow-md cursor-grab active:cursor-grabbing transition-all select-none group opacity-90" data-deadline="done" data-id="task-12" data-priority="high" data-subject="dsa" draggable="true">
+<div class="flex items-start justify-between gap-2 mb-2.5">
+<span class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span> DSA
+            </span>
+<span class="px-2 py-0.5 rounded-md bg-emerald-100 text-emerald-900 font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">check_circle</span> Đã làm
+            </span>
+</div>
+<h3 class="task-title font-title-sm text-title-sm text-on-surface font-semibold line-through text-on-surface-variant group-hover:text-primary transition-colors mb-1.5">
+            Thực hành Bảng băm (Hash Table) xử lý va chạm
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-3">
+            Triển khai Separate Chaining và Open Addressing với Linear Probing trên C++17.
+          </p>
+<div class="flex items-center justify-between pt-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1 text-emerald-700">
+<span class="material-symbols-outlined text-[15px]">task_alt</span> 08 Th03
+            </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">timer</span> 3 Pomo
+            </span>
+</div>
+</div>
+<!-- Task Card 13 -->
+<div class="task-card bg-surface-container-lowest p-4 rounded-2xl shadow-sm hover:shadow-md cursor-grab active:cursor-grabbing transition-all select-none group opacity-90" data-deadline="done" data-id="task-13" data-priority="low" data-subject="giai-tich-2" draggable="true">
+<div class="flex items-start justify-between gap-2 mb-2.5">
+<span class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-indigo-500"></span> Giải tích 2
+            </span>
+<span class="px-2 py-0.5 rounded-md bg-emerald-100 text-emerald-900 font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">check_circle</span> Đã làm
+            </span>
+</div>
+<h3 class="task-title font-title-sm text-title-sm text-on-surface font-semibold line-through text-on-surface-variant group-hover:text-primary transition-colors mb-1.5">
+            Tóm tắt công thức vi phân hàm nhiều biến
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-3">
+            Vẽ sơ đồ tư duy Mindmap dạng cheat-sheet in khổ A4 phục vụ mang vào phòng tự học.
+          </p>
+<div class="flex items-center justify-between pt-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1 text-emerald-700">
+<span class="material-symbols-outlined text-[15px]">task_alt</span> 06 Th03
+            </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">timer</span> 2 Pomo
+            </span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Alternative List View Container (Hidden by default) -->
+<div class="hidden flex-col gap-3" id="list-view">
+<div class="bg-surface-container-lowest p-4 rounded-2xl shadow-sm flex items-center justify-between font-label-md text-label-md text-on-surface-variant">
+<div class="flex items-center gap-4 w-1/2">
+<span class="w-6"></span>
+<span>Tên nhiệm vụ / Môn học</span>
+</div>
+<div class="flex items-center justify-end gap-12 w-1/2">
+<span>Trạng thái</span>
+<span>Hạn chót</span>
+<span>Ưu tiên</span>
+<span>Hành động</span>
+</div>
+</div>
+<div class="flex flex-col gap-2.5" id="list-items-container">
+<!-- Generated dynamically in JS or mirroring current tasks -->
+</div>
+</div>
+<!-- Detail Drawer Slide-over -->
+<div class="fixed inset-0 z-50 pointer-events-none transition-opacity duration-300 opacity-0" id="task-drawer">
+<div class="absolute inset-0 bg-primary/40 backdrop-blur-sm pointer-events-auto" id="task-drawer-overlay"></div>
+<div class="absolute right-0 top-0 bottom-0 w-full max-w-lg bg-surface-container-lowest shadow-2xl p-6 flex flex-col justify-between overflow-y-auto pointer-events-auto transition-transform duration-300 translate-x-full" id="drawer-panel">
+<div class="flex flex-col gap-6">
+<div class="flex items-center justify-between pb-4 border-b border-surface-container">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold" id="drawer-subject-badge">Môn học</span>
+<span class="px-2 py-0.5 rounded-md font-label-sm text-label-sm" id="drawer-status-badge">Trạng thái</span>
+</div>
+<button class="p-2 rounded-xl hover:bg-surface-container text-on-surface-variant transition-colors" id="close-drawer-btn">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Mục tiêu nhiệm vụ</span>
+<h2 class="font-headline-sm text-headline-sm text-primary mt-1" id="drawer-title">Tên nhiệm vụ</h2>
+</div>
+<div class="bg-surface-container-low p-4 rounded-2xl flex flex-col gap-3">
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">calendar_today</span> Hạn chót:</span>
+<strong class="text-on-surface font-title-sm text-title-sm" id="drawer-deadline">23:00 - Hôm nay</strong>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">flag</span> Mức ưu tiên:</span>
+<strong class="text-on-surface font-title-sm text-title-sm" id="drawer-priority">Khẩn cấp (P1)</strong>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">timer</span> Dự kiến:</span>
+<strong class="text-on-surface font-title-sm text-title-sm" id="drawer-pomo">3 Pomodoros (75 phút)</strong>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface">Ghi chú &amp; Hướng dẫn làm bài</label>
+<div class="font-body-md text-body-md text-on-surface-variant leading-relaxed p-4 rounded-xl bg-surface-container-low/60 min-h-[120px]" id="drawer-desc">
+            Nội dung chi tiết của nhiệm vụ này...
+          </div>
+</div>
+<!-- Academic Resource Attached -->
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface">Tài liệu đính kèm (LMS / Drive)</label>
+<div class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer">
+<div class="w-9 h-9 rounded-lg bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">description</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="font-title-sm text-title-sm text-on-surface truncate">BaiTap_HuongDan_Lab2.pdf</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2.4 MB • Giảng viên tải lên</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">open_in_new</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-3 pt-6 border-t border-surface-container">
+<button class="flex-1 py-3 px-4 rounded-xl bg-secondary text-on-secondary font-title-sm text-title-sm flex items-center justify-center gap-2 shadow-md hover:opacity-95 transition-all" id="drawer-toggle-complete-btn">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+<span>Chuyển sang Hoàn thành</span>
+</button>
+<button class="p-3 rounded-xl bg-surface-container text-error hover:bg-error-container hover:text-on-error-container transition-colors" id="drawer-delete-btn" title="Xóa nhiệm vụ">
+<span class="material-symbols-outlined text-[20px]">delete</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Modal: Thêm nhiệm vụ mới -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-4 opacity-0 pointer-events-none transition-all duration-300" id="new-task-modal">
+<div class="absolute inset-0 bg-primary/50 backdrop-blur-md" id="modal-overlay"></div>
+<div class="relative w-full max-w-xl bg-surface-container-lowest rounded-3xl shadow-2xl p-6 sm:p-8 transform scale-95 transition-all duration-300 flex flex-col gap-5 max-h-[92vh] overflow-y-auto" id="modal-card">
+<!-- Modal Header -->
+<div class="flex items-center justify-between pb-2">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">add_task</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary">Thêm nhiệm vụ mới</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Lập kế hoạch chi tiết cho mục tiêu học tập sắp tới.</p>
+</div>
+</div>
+<button class="p-2 rounded-xl text-on-surface-variant hover:bg-surface-container transition-colors" id="close-modal-btn">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Form Inputs -->
+<form class="flex flex-col gap-4" id="create-task-form">
+<input id="form-target-column" type="hidden" value="todo"/>
+<!-- Task Title -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface" for="task-name">Tên nhiệm vụ <span class="text-error">*</span></label>
+<input class="w-full px-4 py-2.5 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 focus:outline-none transition-all" id="task-name" placeholder="Ví dụ: Ôn tập đề thi giữa kỳ Giải tích 2" required="" type="text"/>
+</div>
+<!-- Subject & Target Column -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface" for="task-subject">Môn học</label>
+<select class="w-full px-3.5 py-2.5 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none cursor-pointer" id="task-subject">
+<option value="giai-tich-2">Giải tích 2</option>
+<option value="dsa">DSA (Cấu trúc dữ liệu)</option>
+<option value="ktmt">Kiến trúc MT</option>
+<option value="anh-van">Tiếng Anh CN</option>
+</select>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface" for="task-status-select">Cột trạng thái</label>
+<select class="w-full px-3.5 py-2.5 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none cursor-pointer" id="task-status-select">
+<option value="todo">Chưa bắt đầu</option>
+<option value="doing">Đang làm</option>
+<option value="done">Hoàn thành</option>
+</select>
+</div>
+</div>
+<!-- Deadline & Time Estimation -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface" for="task-deadline">Hạn chót</label>
+<input class="w-full px-3.5 py-2 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none" id="task-deadline" type="datetime-local"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface" for="task-pomo">Ước tính Pomodoro</label>
+<div class="flex items-center gap-2">
+<input class="w-24 px-3.5 py-2 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none" id="task-pomo" max="16" min="1" type="number" value="2"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Pomo (~50 phút)</span>
+</div>
+</div>
+</div>
+<!-- Priority selection -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface">Mức độ ưu tiên</label>
+<div class="grid grid-cols-4 gap-2">
+<label class="cursor-pointer">
+<input class="sr-only peer" name="priority" type="radio" value="low"/>
+<div class="p-2.5 rounded-xl bg-surface-container-low text-center peer-checked:bg-surface-container-highest peer-checked:text-primary font-label-sm text-label-sm transition-all hover:bg-surface-container">
+                Thấp
+              </div>
+</label>
+<label class="cursor-pointer">
+<input checked="" class="sr-only peer" name="priority" type="radio" value="medium"/>
+<div class="p-2.5 rounded-xl bg-surface-container-low text-center peer-checked:bg-surface-container-highest peer-checked:text-primary font-label-sm text-label-sm transition-all hover:bg-surface-container">
+                Trung bình
+              </div>
+</label>
+<label class="cursor-pointer">
+<input class="sr-only peer" name="priority" type="radio" value="high"/>
+<div class="p-2.5 rounded-xl bg-surface-container-low text-center peer-checked:bg-amber-100 peer-checked:text-amber-900 font-label-sm text-label-sm transition-all hover:bg-surface-container">
+                Cao
+              </div>
+</label>
+<label class="cursor-pointer">
+<input class="sr-only peer" name="priority" type="radio" value="urgent"/>
+<div class="p-2.5 rounded-xl bg-surface-container-low text-center peer-checked:bg-error-container peer-checked:text-on-error-container font-label-sm text-label-sm transition-all hover:bg-surface-container">
+                Khẩn cấp
+              </div>
+</label>
+</div>
+</div>
+<!-- Description -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface" for="task-desc">Ghi chú &amp; Yêu cầu đề cương</label>
+<textarea class="w-full px-4 py-2.5 rounded-xl bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none resize-none" id="task-desc" placeholder="Nhập tóm tắt yêu cầu, link bài nộp hoặc câu hỏi cần giải..." rows="3"></textarea>
+</div>
+<!-- Action Buttons -->
+<div class="flex items-center justify-end gap-3 pt-3 mt-2">
+<button class="px-5 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container font-title-sm text-title-sm transition-colors" id="cancel-modal-btn" type="button">
+            Hủy
+          </button>
+<button class="px-6 py-2.5 rounded-xl bg-primary-container text-on-primary hover:opacity-95 font-title-sm text-title-sm shadow-md transition-transform active:scale-95 flex items-center gap-1.5" type="submit">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span>Lưu nhiệm vụ</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+<!-- Canvas Confetti Container for Micro-Celebration -->
+<canvas class="fixed inset-0 pointer-events-none z-50 w-full h-full" id="confetti-canvas"></canvas>
+</div>
+<script src="js/kanban-store.js"></script><script>
+  (function () {
+    // --- State & DOM References ---
+    let draggedCard = null;
+    let activeDrawerCardId = null;
+
+    const modal = document.getElementById('new-task-modal');
+    const modalCard = document.getElementById('modal-card');
+    const openModalBtn = document.getElementById('open-modal-btn');
+    const closeModalBtn = document.getElementById('close-modal-btn');
+    const cancelModalBtn = document.getElementById('cancel-modal-btn');
+    const createTaskForm = document.getElementById('create-task-form');
+
+    const drawer = document.getElementById('task-drawer');
+    const drawerPanel = document.getElementById('drawer-panel');
+    const drawerOverlay = document.getElementById('task-drawer-overlay');
+    const closeDrawerBtn = document.getElementById('close-drawer-btn');
+    const drawerToggleBtn = document.getElementById('drawer-toggle-complete-btn');
+    const drawerDeleteBtn = document.getElementById('drawer-delete-btn');
+
+    const viewKanbanBtn = document.getElementById('view-kanban-btn');
+    const viewListBtn = document.getElementById('view-list-btn');
+    const kanbanView = document.getElementById('kanban-view');
+    const listView = document.getElementById('list-view');
+    const listItemsContainer = document.getElementById('list-items-container');
+
+    const searchInput = document.getElementById('task-search-input');
+    const priorityFilter = document.getElementById('priority-filter-select');
+    const subjectButtons = document.querySelectorAll('.filter-subject-btn');
+    const quickClearFilter = document.getElementById('quick-clear-filter');
+
+    // Confetti canvas
+    const canvas = document.getElementById('confetti-canvas');
+    const ctx = canvas.getContext('2d');
+    let confettiPieces = [];
+
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+
+    function triggerConfetti() {
+      confettiPieces = [];
+      const colors = ['#070235', '#006b5f', '#10B981', '#3B82F6', '#f59e0b', '#ec4899'];
+      for (let i = 0; i < 70; i++) {
+        confettiPieces.push({
+          x: window.innerWidth / 2,
+          y: window.innerHeight / 2,
+          r: Math.random() * 6 + 3,
+          d: Math.random() * 50 + 10,
+          color: colors[Math.floor(Math.random() * colors.length)],
+          tilt: Math.random() * 10 - 5,
+          tiltAngleIncremental: (Math.random() * 0.07) + 0.05,
+          tiltAngle: 0,
+          vx: (Math.random() - 0.5) * 14,
+          vy: (Math.random() - 0.7) * 14
+        });
+      }
+      animateConfetti();
+    }
+
+    let confettiAnimId = null;
+    function animateConfetti() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      let stillActive = false;
+
+      confettiPieces.forEach((p) => {
+        p.x += p.vx;
+        p.y += p.vy;
+        p.vy += 0.35; // gravity
+        p.tiltAngle += p.tiltAngleIncremental;
+        p.tilt = Math.sin(p.tiltAngle) * 15;
+
+        if (p.y < canvas.height) {
+          stillActive = true;
+        }
+
+        ctx.beginPath();
+        ctx.lineWidth = p.r;
+        ctx.strokeStyle = p.color;
+        ctx.moveTo(p.x + p.tilt + p.r / 4, p.y);
+        ctx.lineTo(p.x + p.tilt, p.y + p.tilt + p.r / 4);
+        ctx.stroke();
+      });
+
+      if (stillActive) {
+        confettiAnimId = requestAnimationFrame(animateConfetti);
+      } else {
+        cancelAnimationFrame(confettiAnimId);
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+      }
+    }
+
+    // --- Modal Logic ---
+    window.openNewTaskModal = function (columnName) {
+      if (columnName) {
+        document.getElementById('task-status-select').value = columnName;
+        document.getElementById('form-target-column').value = columnName;
+      }
+      modal.classList.remove('opacity-0', 'pointer-events-none');
+      modalCard.classList.remove('scale-95');
+      modalCard.classList.add('scale-100');
+    };
+
+    function closeModal() {
+      modal.classList.add('opacity-0', 'pointer-events-none');
+      modalCard.classList.add('scale-95');
+      modalCard.classList.remove('scale-100');
+      createTaskForm.reset();
+    }
+
+    openModalBtn.addEventListener('click', () => openNewTaskModal('todo'));
+    closeModalBtn.addEventListener('click', closeModal);
+    cancelModalBtn.addEventListener('click', closeModal);
+    document.getElementById('modal-overlay').addEventListener('click', closeModal);
+
+    // --- Detail Drawer Logic ---
+    function openDrawer(card) {
+      activeDrawerCardId = card.getAttribute('data-id');
+      const title = card.querySelector('.task-title').textContent.trim();
+      const subject = card.getAttribute('data-subject');
+      const priority = card.getAttribute('data-priority');
+      const column = card.closest('.kanban-column');
+      const colStatus = column ? column.getAttribute('data-status') : 'todo';
+
+      document.getElementById('drawer-title').textContent = title;
+      const subjBadge = document.getElementById('drawer-subject-badge');
+      const subjNames = {
+        'giai-tich-2': 'Giải tích 2',
+        'dsa': 'DSA (Cấu trúc dữ liệu)',
+        'ktmt': 'Kiến trúc MT',
+        'anh-van': 'Tiếng Anh CN'
+      };
+      subjBadge.textContent = subjNames[subject] || subject;
+
+      const priorityTexts = {
+        'urgent': 'Khẩn cấp (P1)',
+        'high': 'Cao (P2)',
+        'medium': 'Trung bình (P3)',
+        'low': 'Thấp (P4)'
+      };
+      document.getElementById('drawer-priority').textContent = priorityTexts[priority] || 'Bình thường';
+
+      const statusBadge = document.getElementById('drawer-status-badge');
+      if (colStatus === 'done') {
+        statusBadge.textContent = 'Hoàn thành';
+        statusBadge.className = 'px-2 py-0.5 rounded-md font-label-sm text-label-sm bg-emerald-100 text-emerald-800';
+        drawerToggleBtn.innerHTML = '<span class="material-symbols-outlined text-[20px]">replay</span><span>Mở lại nhiệm vụ</span>';
+        drawerToggleBtn.className = 'flex-1 py-3 px-4 rounded-xl bg-surface-container text-on-surface font-title-sm text-title-sm flex items-center justify-center gap-2 shadow-sm hover:bg-surface-container-high transition-all';
+      } else {
+        statusBadge.textContent = colStatus === 'doing' ? 'Đang làm' : 'Chưa bắt đầu';
+        statusBadge.className = 'px-2 py-0.5 rounded-md font-label-sm text-label-sm bg-blue-100 text-blue-800';
+        drawerToggleBtn.innerHTML = '<span class="material-symbols-outlined text-[20px]">check_circle</span><span>Đánh dấu Hoàn thành</span>';
+        drawerToggleBtn.className = 'flex-1 py-3 px-4 rounded-xl bg-secondary text-on-secondary font-title-sm text-title-sm flex items-center justify-center gap-2 shadow-md hover:opacity-95 transition-all';
+      }
+
+      const pElem = card.querySelector('p');
+      document.getElementById('drawer-desc').textContent = pElem ? pElem.textContent.trim() : 'Không có ghi chú thêm.';
+
+      drawer.classList.remove('opacity-0', 'pointer-events-none');
+      drawerPanel.classList.remove('translate-x-full');
+    }
+
+    function closeDrawer() {
+      drawer.classList.add('opacity-0', 'pointer-events-none');
+      drawerPanel.classList.add('translate-x-full');
+      activeDrawerCardId = null;
+    }
+
+    closeDrawerBtn.addEventListener('click', closeDrawer);
+    drawerOverlay.addEventListener('click', closeDrawer);
+
+    drawerToggleBtn.addEventListener('click', () => {
+      if (!activeDrawerCardId) return;
+      const targetCard = document.querySelector(`[data-id="${activeDrawerCardId}"]`);
+      if (targetCard) {
+        const currentCol = targetCard.closest('.kanban-column').getAttribute('data-status');
+        if (currentCol === 'done') {
+          // move back to todo
+          document.querySelector('#col-todo .task-drop-area').appendChild(targetCard);
+          targetCard.classList.remove('opacity-90');
+          targetCard.querySelector('.task-title').classList.remove('line-through', 'text-on-surface-variant');
+        } else {
+          // mark complete
+          document.querySelector('#col-done .task-drop-area').appendChild(targetCard);
+          targetCard.classList.add('opacity-90');
+          targetCard.querySelector('.task-title').classList.add('line-through', 'text-on-surface-variant');
+          triggerConfetti();
+        }
+        updateCounts();
+        closeDrawer();
+      }
+    });
+
+    drawerDeleteBtn.addEventListener('click', () => {
+      if (!activeDrawerCardId) return;
+      const targetCard = document.querySelector(`[data-id="${activeDrawerCardId}"]`);
+      if (targetCard) {
+        targetCard.remove();
+        updateCounts();
+        closeDrawer();
+      }
+    });
+
+    // --- Drag and Drop Handlers ---
+    function attachCardEvents(card) {
+      card.addEventListener('dragstart', (e) => {
+        draggedCard = card;
+        card.classList.add('opacity-40', 'scale-95');
+        e.dataTransfer.effectAllowed = 'move';
+        e.dataTransfer.setData('text/plain', card.getAttribute('data-id'));
+      });
+
+      card.addEventListener('dragend', () => {
+        if (draggedCard) {
+          draggedCard.classList.remove('opacity-40', 'scale-95');
+          draggedCard = null;
+        }
+        document.querySelectorAll('.task-drop-area').forEach(zone => {
+          zone.classList.remove('bg-surface-container/60', 'ring-2', 'ring-primary/20');
+        });
+      });
+
+      card.addEventListener('click', (e) => {
+        // Prevent opening if dragging occurred
+        openDrawer(card);
+      });
+    }
+
+    document.querySelectorAll('.task-card').forEach(attachCardEvents);
+
+    const dropZones = document.querySelectorAll('.task-drop-area');
+    dropZones.forEach(zone => {
+      zone.addEventListener('dragover', (e) => {
+        e.preventDefault();
+        e.dataTransfer.dropEffect = 'move';
+        zone.classList.add('bg-surface-container/60', 'ring-2', 'ring-primary/20');
+      });
+
+      zone.addEventListener('dragleave', (e) => {
+        if (!zone.contains(e.relatedTarget)) {
+          zone.classList.remove('bg-surface-container/60', 'ring-2', 'ring-primary/20');
+        }
+      });
+
+      zone.addEventListener('drop', (e) => {
+        e.preventDefault();
+        zone.classList.remove('bg-surface-container/60', 'ring-2', 'ring-primary/20');
+        if (draggedCard) {
+          zone.appendChild(draggedCard);
+          const colStatus = zone.closest('.kanban-column').getAttribute('data-status');
+          const title = draggedCard.querySelector('.task-title');
+
+          if (colStatus === 'done') {
+            draggedCard.classList.add('opacity-90');
+            title.classList.add('line-through', 'text-on-surface-variant');
+            triggerConfetti();
+          } else {
+            draggedCard.classList.remove('opacity-90');
+            title.classList.remove('line-through', 'text-on-surface-variant');
+          }
+          updateCounts();
+        }
+      });
+    });
+
+    function updateCounts() {
+      document.querySelectorAll('.kanban-column').forEach(col => {
+        const count = col.querySelectorAll('.task-card:not(.hidden)').length;
+        const countBadge = col.querySelector('.column-count');
+        if (countBadge) countBadge.textContent = count;
+      });
+    }
+
+    // --- Form Creation ---
+    createTaskForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const title = document.getElementById('task-name').value;
+      const subject = document.getElementById('task-subject').value;
+      const status = document.getElementById('task-status-select').value;
+      const priorityRadio = document.querySelector('input[name="priority"]:checked');
+      const priority = priorityRadio ? priorityRadio.value : 'medium';
+      const pomo = document.getElementById('task-pomo').value || '2';
+      const desc = document.getElementById('task-desc').value || 'Nhiệm vụ mới tạo.';
+
+      const id = 'task-' + Date.now();
+      const subjectColors = {
+        'giai-tich-2': 'bg-indigo-500',
+        'dsa': 'bg-emerald-600',
+        'ktmt': 'bg-amber-500',
+        'anh-van': 'bg-cyan-600'
+      };
+      const subjectLabels = {
+        'giai-tich-2': 'Giải tích 2',
+        'dsa': 'DSA',
+        'ktmt': 'Kiến trúc MT',
+        'anh-van': 'Tiếng Anh CN'
+      };
+
+      const card = document.createElement('div');
+      card.className = "task-card bg-surface-container-lowest p-4 rounded-2xl shadow-sm hover:shadow-md cursor-grab active:cursor-grabbing transition-all select-none group";
+      card.setAttribute('draggable', 'true');
+      card.setAttribute('data-id', id);
+      card.setAttribute('data-subject', subject);
+      card.setAttribute('data-priority', priority);
+      card.setAttribute('data-deadline', 'normal');
+
+      card.innerHTML = `
+        <div class="flex items-start justify-between gap-2 mb-2.5">
+          <span class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-1">
+            <span class="w-1.5 h-1.5 rounded-full ${subjectColors[subject] || 'bg-primary'}"></span> ${subjectLabels[subject] || subject}
+          </span>
+          <span class="px-2 py-0.5 rounded-md bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+            Mới tạo
+          </span>
+        </div>
+        <h3 class="task-title font-title-sm text-title-sm text-on-surface font-semibold group-hover:text-primary transition-colors mb-1.5">
+          ${title}
+        </h3>
+        <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-3">
+          ${desc}
+        </p>
+        <div class="flex items-center justify-between pt-2 text-on-surface-variant font-label-sm text-label-sm">
+          <div class="flex items-center gap-3">
+            <span class="flex items-center gap-1">
+              <span class="material-symbols-outlined text-[15px]">event</span> Hôm nay
+            </span>
+            <span class="flex items-center gap-1">
+              <span class="material-symbols-outlined text-[15px] text-secondary">timer</span> ${pomo} Pomo
+            </span>
+          </div>
+          <span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-medium">${priority.toUpperCase()}</span>
+        </div>
+      `;
+
+      attachCardEvents(card);
+      const targetCol = document.getElementById('col-' + status);
+      if (targetCol) {
+        targetCol.querySelector('.task-drop-area').prepend(card);
+      }
+      updateCounts();
+      closeModal();
+    });
+
+    // --- Search & Subject / Priority Filters ---
+    function applyFilters() {
+      const query = searchInput.value.toLowerCase().trim();
+      const selectedSubject = document.querySelector('.filter-subject-btn.active')?.getAttribute('data-subject') || 'all';
+      const selectedPriority = priorityFilter.value;
+
+      let hasActiveFilter = selectedSubject !== 'all' || selectedPriority !== 'all' || query !== '';
+      if (quickClearFilter) {
+        quickClearFilter.classList.toggle('hidden', !hasActiveFilter);
+      }
+
+      document.querySelectorAll('.task-card').forEach(card => {
+        const title = card.querySelector('.task-title').textContent.toLowerCase();
+        const desc = card.querySelector('p')?.textContent.toLowerCase() || '';
+        const subj = card.getAttribute('data-subject');
+        const prio = card.getAttribute('data-priority');
+
+        const matchesQuery = !query || title.includes(query) || desc.includes(query);
+        const matchesSubj = selectedSubject === 'all' || subj === selectedSubject;
+        const matchesPrio = selectedPriority === 'all' || prio === selectedPriority;
+
+        if (matchesQuery && matchesSubj && matchesPrio) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+
+      updateCounts();
+    }
+
+    searchInput.addEventListener('input', applyFilters);
+    priorityFilter.addEventListener('change', applyFilters);
+
+    subjectButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        subjectButtons.forEach(b => {
+          b.classList.remove('active', 'bg-primary', 'text-on-primary');
+          b.classList.add('bg-surface-container', 'text-on-surface-variant');
+        });
+        btn.classList.add('active', 'bg-primary', 'text-on-primary');
+        btn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+        applyFilters();
+      });
+    });
+
+    if (quickClearFilter) {
+      quickClearFilter.addEventListener('click', () => {
+        searchInput.value = '';
+        priorityFilter.value = 'all';
+        subjectButtons[0].click();
+      });
+    }
+
+    // --- View Switcher (Kanban vs List View) ---
+    function renderListView() {
+      listItemsContainer.innerHTML = '';
+      const cards = document.querySelectorAll('.task-card');
+      cards.forEach(card => {
+        const title = card.querySelector('.task-title').textContent.trim();
+        const subj = card.getAttribute('data-subject');
+        const prio = card.getAttribute('data-priority');
+        const col = card.closest('.kanban-column');
+        const status = col ? col.getAttribute('data-status') : 'todo';
+
+        const statusMap = {
+          'todo': { label: 'Chưa làm', class: 'bg-surface-container text-on-surface' },
+          'doing': { label: 'Đang làm', class: 'bg-blue-100 text-blue-800' },
+          'done': { label: 'Hoàn thành', class: 'bg-emerald-100 text-emerald-800' }
+        };
+
+        const row = document.createElement('div');
+        row.className = "flex items-center justify-between p-4 rounded-xl bg-surface-container-lowest shadow-sm hover:bg-surface-container-low transition-all cursor-pointer";
+        row.innerHTML = `
+          <div class="flex items-center gap-3.5 w-1/2">
+            <span class="material-symbols-outlined text-[20px] text-on-surface-variant">drag_indicator</span>
+            <div class="flex flex-col">
+              <span class="font-title-sm text-title-sm text-on-surface font-semibold ${status === 'done' ? 'line-through opacity-70' : ''}">${title}</span>
+              <span class="font-label-sm text-label-sm text-on-surface-variant capitalize">${subj}</span>
+            </div>
+          </div>
+          <div class="flex items-center justify-end gap-10 w-1/2">
+            <span class="px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-semibold ${statusMap[status].class}">${statusMap[status].label}</span>
+            <span class="font-body-sm text-body-sm text-on-surface-variant">T7, 18 Th03</span>
+            <span class="font-label-sm text-label-sm uppercase font-semibold text-on-surface-variant">${prio}</span>
+            <button class="p-1 rounded-lg hover:bg-surface-container text-on-surface-variant">
+              <span class="material-symbols-outlined text-[18px]">chevron_right</span>
+            </button>
+          </div>
+        `;
+        row.addEventListener('click', () => openDrawer(card));
+        listItemsContainer.appendChild(row);
+      });
+    }
+
+    viewListBtn.addEventListener('click', () => {
+      viewListBtn.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+      viewListBtn.classList.remove('text-on-surface-variant');
+      viewKanbanBtn.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+      viewKanbanBtn.classList.add('text-on-surface-variant');
+
+      kanbanView.classList.add('hidden');
+      listView.classList.remove('hidden');
+      renderListView();
+    });
+
+    viewKanbanBtn.addEventListener('click', () => {
+      viewKanbanBtn.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+      viewKanbanBtn.classList.remove('text-on-surface-variant');
+      viewListBtn.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+      viewListBtn.classList.add('text-on-surface-variant');
+
+      listView.classList.add('hidden');
+      kanbanView.classList.remove('hidden');
+    });
+
+  })();
+</script></main></div><nav class="lg:hidden fixed bottom-0 left-0 right-0 h-16 bg-surface/90 backdrop-blur-xl shadow-[0_-1px_8px_rgba(0,0,0,0.04)] z-50 flex items-center justify-around px-2" data-active-classes="text-primary font-bold"><a class="flex flex-col items-center justify-center gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="bang-dieu-khien" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-label-sm text-label-sm text-[10px]">Tổng quan</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-0.5 transition-colors text-primary font-bold" data-path="ke-hoach-va-nhiem-vu" href="#"><span class="material-symbols-outlined text-[20px]">task_alt</span><span class="font-label-sm text-label-sm text-[10px]">Nhiệm vụ</span></a><a class="flex flex-col items-center justify-center gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="lich-hoc" href="#"><span class="material-symbols-outlined text-[20px]">calendar_today</span><span class="font-label-sm text-label-sm text-[10px]">Lịch</span></a><a class="flex flex-col items-center justify-center gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="bam-gio-pomodoro" href="#"><span class="material-symbols-outlined text-[20px]">timer</span><span class="font-label-sm text-label-sm text-[10px]">Pomodoro</span></a><a class="flex flex-col items-center justify-center gap-0.5 text-on-surface-variant hover:text-on-surface transition-colors" data-path="cai-dat-rieng-tu" href="#"><span class="material-symbols-outlined text-[20px]">menu</span><span class="font-label-sm text-label-sm text-[10px]">Menu</span></a></nav><script src="js/nav.js"></script></body></html>
